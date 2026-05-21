@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: black;
+            width: 1500px;
+            /* border: 1px solid aqua; */
+            margin: 0 auto;
+            display: flex;
+            height: 900px;
+            /* align-items: center; */
+            flex-direction: column;
+            justify-content: center;
+
+        }
+        .lab{            
+            width: 100%;
+            top: 50%;
+            /* position: relative; */
+            height: 500px;
+            /* border: 1px solid aqua; */
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .lab-box{
+            color: aqua;
+            width: 265px;
+            display: flex;
+            /* float: left; */
+            height: 300px;
+            padding: 15px 15px;
+            justify-content: center;
+            border: 1px solid aqua;
+            border-radius: 20px;
+            flex-direction: column;
+            align-items: center;
+            transition: all 0.3s ease-in-out;
+        }
+        .bai_lab{
+            width: 80%;
+             height: 40px;
+             border-radius: 20px;
+            border: 1px solid aqua;
+            align-items: center;
+            display: flex;
+            margin: 10px 0 ;
+            justify-content: center;
+            transition: all 0.3s ease-in-out;
+        }
+        .bai_lab:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.571);
+        }
+        .lab-box:hover{
+            transform: translateY(-5px);
+            box-shadow: 0 8px 18px rgba(0, 255, 255, 0.443);
+        }
+        a{
+            /* display: block; */
+            text-decoration: none;
+            color: aqua;
+        }
+        .lab-box h1{
+            display: block;
+            font-size: 25px;
+        }
+        span
+        {
+            color: aqua;
+        }
+    </style>
+    
+    <div>
+    <a href="index.html">Trang chủ </a><span> > Lab Thực hành web</span></div>
+    <div class="lab">
+        <div class="lab-box">
+            <h1>Lab01: HTML</h1>
+            <div class="bai_lab">
+                <a href="lab/Lab01/Vi_du/Lab1_bai4,5.html">Lab1_3</a>
+            </div>
+            <div class="bai_lab">
+                <a href="lab/Lab01/Vi_du/Lab1_bai4,5.html">Lab1_4</a>
+            </div>
+        </div>
+        <div class="lab-box">
+            <h1>Lab02: Table & List</h1>
+            <div class="bai_lab">
+                <a href="lab/Lab02/Vi_du_Lab01/lab02_bai1.html">Lab2_1</a>
+            </div>
+            <div class="bai_lab">
+                <a href="lab/Lab02/Vi_du_Lab01/lab02_bai2.html">Lab2_2</a>
+            </div>
+            <div class="bai_lab">
+                <a href="lab/Lab02/Vi_du_Lab01/lab02_bai3.html">Lab2_3</a>
+            </div>
+        </div>
+        <div class="lab-box">
+            <h1>Lab03: Frame & Form</h1>
+            <div class="bai_lab">
+                <a href="lab/Lab03/Vi_du_Lab01/lab03_bai1.html">Lab3_1</a>
+            </div>
+            <div class="bai_lab">
+                <a href="lab/Lab03/Vi_du_Lab01/lab03_bai2.html">Lab3_2</a>
+            </div>
+            <div class="bai_lab">
+                <a href="lab/Lab03/Vi_du_Lab01/lab03_bai3.html">Lab3_3</a>
+            </div>
+        </div>
+        <div class="lab-box">
+            <h1>Lab04: CSS cơ bản</h1>
+            <div class="bai_lab">
+                <a href="lab/Lab04/Vi_du/lab04_1.html">Lab4_1</a>
+            </div>
+            <div class="bai_lab">
+                <a href="lab/Lab04/Vi_du/lab04_2.html">Lab4_2</a>
+            </div>
+            <div class="bai_lab">
+                <a href="lab/Lab04/Vi_du/lab04_3.html">Lab4_3</a>
+            </div>
+        </div>
+        <div class="lab-box">
+            <h1>Lab05: Các thuộc tính CSS</h1>
+            <div class="bai_lab">
+                <a href="lab/lab05/Lab05/Vi_du/lab05_1.html">Lab5_1</a>
+            </div>
+            <div class="bai_lab">
+                <a href="lab/lab05/Lab05/lab05_2.html">Lab5_2</a>
+            </div>
+            <div class="bai_lab">
+                <a href="lab/lab05/Lab05/Bai_2/lab5_3.html">Lab5_3</a>
+            </div>
+        </div>
+        <div class="lab-box">
+            <h1>Lab06: Xây dựng layout responsive bằng CSS</h1>
+            <div class="bai_lab">
+                <a href="lab/Lab06/Vi_du/lab06_3.html">Lab6_1</a>
+            </div>
+            <div class="bai_lab">
+                <a href="lab/Lab06/Vi_du/lab06_3.html">Lab6_2</a>
+            </div>
+            <div class="bai_lab">
+                <a href="lab/Lab06/Bai_2_Minh_hoa_layout/lab06_2.html">Lab6_3</a>
+            </div>
+        </div>
+        <div class="lab-box">
+            <h1>Lab07: Javascript</h1>
+            <div class="bai_lab">
+                <a href="lab/Lab07/Vi_du/lab07_1.html">Lab7_1</a>
+            </div>
+            <div class="bai_lab">
+                <a href="lab/Lab07/demo_bai_2/lab07_2.html">Lab7_2</a>
+            </div>
+        </div>
+        <div class="lab-box">
+            <h1>Lab08: Javascript nâng cao</h1>
+            <div class="bai_lab">
+                <a href="lab/Lab08/Vi_du_1/lab8_1.html">Lab8_1</a>
+            </div>
+            <div class="bai_lab">
+                <a href="lab/Lab08/Vi_du_1/lab08_2.html">Lab8_2</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

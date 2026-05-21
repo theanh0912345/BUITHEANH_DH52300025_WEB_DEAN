@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/type.css">
+</head>
+<body>
+    <style>
+        .btn-innerr{
+            gap: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    transition: all 0.3s ease-in-out;
+        }
+        .btn-innerr:hover{
+            box-shadow: 0 1px 20px rgba(0, 255, 255, 0.548);
+            transform: translateY(-3px);
+            background-color: #ccc;
+        }
+    </style>
+        <div id="preloader" >
+        <div class="loader" >
+            <div class="loader2"></div>
+        </div>
+    </div>
+    <div id="header">
+        <div class="left_head">
+            <div class="img"><img src="./images/phone.png" alt="" width="22" style="filter: invert(100%) sepia(100%) saturate(10000%) hue-rotate(180deg);"></div>
+            <div class="hotline"><div>Hotline</div><div>0912345678</div></div>
+        </div>
+        <div><img src="./images/logo.png" alt="logo" width="280"></div>
+        <div class="right_head">
+            <div class="nguoidung"><img src="./images/nguoidung.png" width="22" style="filter: invert(100%) sepia(100%) saturate(10000%) hue-rotate(180deg);"><br><a href="#">Người dùng</a></div>
+            <div class="giohang"><img src="./images/giohang.png" width="22" style="filter: invert(100%) sepia(100%) saturate(10000%) hue-rotate(180deg);"><br><a href="giohang.html">Giỏ hàng <span class="cart-badge" id="cart-badge">0</span></a></div>
+            <form action="danhsachSP.html" method="get" class="frm_search">
+                <div class="search_bar">
+                    <input class="search" type="text" placeholder="Sản phẩm cần tìm..." name="search" id="search-input">
+                    <button type="submit" class="btn_search" id="search-btn">Tìm Kiếm</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div style="display: flex;"><a href="index.html" style="text-decoration: none; color: aqua;"><h2> Trang chủ </h2></a><span style="color: aqua;"><h2> > </h2></span><span style="color: aqua;"> <h2> Liên hệ</h2></span></div>
+
+    <main style="width:980px;margin:2rem auto;color:aqua;">
+        <h2 class="tieu_de">Liên hệ</h2>
+        <div style="display:flex;gap:2rem;align-items:flex-start;">
+            <form id="contact-form" style="flex:1;background:rgba(0,0,0,0.5);padding:1.5rem;border-radius:12px;border:1px solid rgba(0,255,255,0.12);">
+                <div style="margin-bottom:0.8rem;"><label>Tên</label><br><input type="text" name="name" id="name" required placeholder="Hãy nhập tên..." style="width:100%; padding:8px; border-radius:6px; border:1px solid #ccc; background-color: black; color: aqua; "><span id="ten"></span></div>
+                <div style="margin-bottom:0.8rem;"><label>Email</label><br><input type="email" name="email" id="gmail" required placeholder="Hãy nhập email của bạn..." style="width:100%; padding:8px; border-radius:6px; border:1px solid #ccc; background-color: black; color: aqua;"><span id="email"></span></div>
+                <div style="margin-bottom:0.8rem;"><label>Nội dung</label><br><textarea name="message" rows="6" id="message" required placeholder="hãy nhập nội dung..." style="width:100%; padding:8px; border-radius:6px; border:1px solid #ccc; background-color: black; color: aqua;"></textarea><span id="noidung"></span></div>
+                <button type="submit" class="btn-innerr" onclick="text()" style="border-radius: 20px;"><span class="text" >Gửi liên hệ</span></button>
+            </form>
+            <aside style="width:320px;background:rgba(0,0,0,0.5);padding:1rem;border-radius:12px;border:1px solid rgba(0,255,255,0.12);">
+                <h3>Thông tin cửa hàng</h3>
+                <p>Địa chỉ: Phường Đồng xoài, TP.Đồng Nai</p>
+                <p>Điện thoại: 0912345678</p>
+                <p>Email: info@caulong.com</p>
+                <h4>Giờ mở cửa</h4>
+                <p>Thứ 2 - Chủ nhật: 8:00 - 20:00</p>
+            </aside>
+        </div>
+    </main>
+
+    <footer id="footer"> 
+        <div class="footer-logo">
+            <img src="images/logo.png" alt="logo">
+            <span>Nơi nâng tầm đam mê của bạn.</span>
+            <span>Uy tín - chất lượng - sang trọng</span>
+            <div>
+                <i class="fa-brands fa-facebook"> </i>
+                <i class="fa-brands fa-instagram"> </i>
+                <i class="fa-brands fa-tiktok"> </i>
+                <i class="fa-brands fa-youtube"> </i>
+            </div>
+        </div>
+        <div class="footer-thongtin">
+                <h2>Thông tin liên hệ</h2>
+                <div>
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <span>Địa chỉ: Phường Đồng xoài, TP.Đồng Nai </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Điện thoại: 0123 456 789</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email: info@caulong.com</span>
+                </div>
+        </div>
+        <div class="footer-img-map">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d977.3042299065058!2d106.86605626959144!3d11.536291313303742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDMyJzEwLjYiTiAxMDbCsDUyJzAwLjEiRQ!5e0!3m2!1svi!2s!4v1779016938579!5m2!1svi!2s" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+
+    <script src="js/cart-badge.js"></script>
+    <script src="js/load.js"></script>
+    <script src="js/nhay.js"></script>
+    <script>
+        function text(){
+
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('gmail');
+            const messageInput = document.getElementById('message');
+            const nameError = document.getElementById('ten');
+            const emailError = document.getElementById('email');
+            const messageError = document.getElementById('noidung');
+
+            const nameValue = nameInput.value.trim();
+            const emailValue = emailInput.value.trim();
+            const messageValue = messageInput.value.trim();
+
+            function validateEmail(value) {
+                const emailRegex = /\S+@\S+\.\S+/;
+                return emailRegex.test(value);
+            }
+
+            let isValid = true;
+
+            if (nameValue === '') {
+                nameError.textContent = 'Vui lòng nhập tên của bạn.';
+                isValid = false;
+            } else {
+                nameError.textContent = '';
+            }
+
+            if (emailValue === '' || !validateEmail(emailValue)) {
+                emailError.textContent = 'Vui lòng nhập địa chỉ email hợp lệ.';
+                isValid = false;
+            } else {
+                emailError.textContent = '';
+            }
+
+            if (messageValue === '') {
+                messageError.textContent = 'Vui lòng nhập nội dung liên hệ.';
+                isValid = false;
+            } else {
+                messageError.textContent = '';
+            }
+
+            if (!isValid) {
+                return;
+            }
+
+            alert('Cảm ơn. Chúng tôi đã nhận được yêu cầu của bạn.');
+            this.reset();
+        };
+    </script>
+</body>
+</html>

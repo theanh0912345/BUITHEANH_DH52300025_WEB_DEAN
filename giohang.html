@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/type.css">
+</head>
+<body>
+    <div id="preloader">
+        <div class="loader">
+            <div class="loader2"></div>
+        </div>
+    </div>
+    <div id="header">
+        <div class="left_head">
+            <div class="img">
+                <img src="./images/phone.png" alt="" width="22" style="filter: invert(100%) sepia(100%) saturate(10000%) hue-rotate(180deg);" >
+            </div>
+            <div class="hotline">
+                <div>
+                    Hotline
+                </div>
+                <div>
+                    0912345678
+                </div>
+            </div>
+        </div>
+        <div ><img src="./images/logo.png" alt="logo" width="280"></div>
+        <div class="right_head">
+            <div class="nguoidung">
+                <img src="./images/nguoidung.png" alt="icon_nguoidung" style="filter: invert(100%) sepia(100%) saturate(10000%) hue-rotate(180deg);" width="22"><br>
+                <a href="#">Người dùng</a>
+            </div>
+            <div class="giohang">
+                <img src="./images/giohang.png" alt="icon_nguoidung" style="filter: invert(100%) sepia(100%) saturate(10000%) hue-rotate(180deg);" width="22"><br>
+                <a href="giohang.html">Giỏ hàng <span class="cart-badge" id="cart-badge">0</span></a>
+            </div>
+            <form action="danhsachSP.html" method="get" class="frm_search">
+                <div class="search_bar">
+                    <input class="search" type="text" placeholder="Sản phẩm cần tìm..." name="search" id="search-input" >
+                    <button type="submit" class="btn_search" id="search-btn">Tìm Kiếm</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+
+    <h2 class="tieu_de">Giỏ hàng của bạn</h2>
+    <div class="giohang_main">
+        <div class="giohang_content">
+            <div class="giohang_table_wrapper">
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th>Giá</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items"></tbody>
+                </table>
+                <div id="cart-empty" class="cart-empty">
+                    <p>Giỏ hàng đang trống.</p>
+                    <a href="index.html" class="btn-inner_"><span class="text">Tiếp tục mua sắm</span></a>
+                </div>
+            </div>
+            <aside class="cart-summary" id="cart-summary">
+                <h3>Đơn hàng</h3>
+                <div class="summary-row">
+                    <span>Tổng sản phẩm</span>
+                    <strong id="cart-count">0</strong>
+                </div>
+                <div class="summary-row">
+                    <span>Tổng tiền</span>
+                    <strong id="cart-total">0₫</strong>
+                </div>
+                <div class="cart-actions">
+                    <button id="clear-cart" class="btn-inner_"><span class="text">Xóa giỏ hàng</span></button>
+                    <button id="checkout-btn" class="btn-inner_"><span class="text">Thanh toán</span></button>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="footer-logo">
+            <img src="images/logo.png" alt="logo">
+            <span>Nơi nâng tầm đam mê của bạn.</span>
+            <span>Uy tín - chất lượng - sang trọng</span>
+            <div>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+        <div class="footer-thongtin">
+            <h2>Thông tin liên hệ</h2>
+            <div>
+                <i class="fa-solid fa-map-location-dot"></i>
+                <span>Địa chỉ: Phường Đồng xoài, TP.Đồng Nai </span>
+            </div>
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <span>Điện thoại: 0123 456 789</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email: info@caulong.com</span>
+            </div>
+        </div>
+        <div class="footer-img-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d977.3042299065058!2d106.86605626959144!3d11.536291313303742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDMyJzEwLjYiTiAxMDbCsDUyJzAwLjEiRQ!5e0!3m2!1svi!2s!4v1779016938579!5m2!1svi!2s" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+
+    <script src="js/cart-badge.js"></script>
+    <script src="js/load.js"></script>
+    <script src="js/nhay.js"></script>
+    <script src="js/giohang.js"></script>
+</body>
+</html>

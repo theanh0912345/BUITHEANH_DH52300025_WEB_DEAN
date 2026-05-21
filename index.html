@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/type.css">
+</head>
+<body>
+    <div id="preloader" >
+        <div class="loader" >
+            <div class="loader2"></div>
+        </div>
+    </div>
+    <div id="header">
+        <div class="left_head">
+            <div class="img">
+                <img src="./images/phone.png" alt="" width="22" style="filter: invert(100%) sepia(100%) saturate(10000%) hue-rotate(180deg);" >
+            </div>
+            <div class="hotline">
+                <div>
+                    Hotline
+                </div>
+                <div>
+                    0912345678
+                </div>
+            </div>
+        </div>
+        <div ><img src="./images/logo.png" alt="logo" width="280"></div>
+        <div class="right_head">
+            <div class="nguoidung">
+                <img src="./images/nguoidung.png" alt="icon_nguoidung"  style="filter: invert(100%) sepia(100%) saturate(10000%) hue-rotate(180deg);" width="22"><br>
+                <a href="#">Người dùng</a>
+            </div>
+            <div class="giohang">
+                <img src="./images/giohang.png" alt="icon_nguoidung"  style="filter: invert(100%) sepia(100%) saturate(10000%) hue-rotate(180deg);" width="22"><br>
+                 <a href="giohang.html">Giỏ hàng <span class="cart-badge" id="cart-badge">0</span></a>
+            </div>
+            <form action="danhsachSP.html" method="get" class="frm_search">
+                <div class="search_bar">
+                    <input class="search" type="text" placeholder="Sản phẩm cần tìm..." name="search" id="search-input" >
+                    <button type="submit" class="btn_search" id="search-btn">Tìm Kiếm</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="menu_ngang_">
+        <ul id="menu_ngang">
+            <li><a href="#">Trang chủ</a></li>
+            <li class="menu_san_pham">
+                <a href="danhsachSP.html">Sản phẩm</a>
+                <i class="fa-solid fa-chevron-down arrow"></i>
+                <ul class="sub_menu">
+                    <h1>DANH MỤC SẢN PHẨM</h1>
+                    <li class="menu_sanpham_con">
+                        <a href="danhsachSP.html?category=vot">
+                        <h4>VỢT CẦU LÔNG</h4> 
+                        <i class="fa-solid fa-chevron-down arrow"></i></a>
+                            <ul class="sub_menu_con">
+                                <li class="border_bottom"><a href="danhsachSP.html?category=vot-yonex"><h4>VỢT CẦU LÔNG YONEX</h4></a>                                 
+                                </li>
+                                <li class="border_bottom"><a href="danhsachSP.html?category=vot-lining"><h4>VỢT CẦU LÔNG LINING</h4></a></li>
+                                <li class="border_bottom"><a href="danhsachSP.html?category=vot-victor"><h4> VỢT CẦU LÔNG VICTOR</h4></a></li>
+                            </ul>
+                    </li>
+                    <li class="menu_sanpham_con">
+                        <a href="danhsachSP.html?category=giay">
+                        <h4>GIÀY CẦU LÔNG</h4>
+                        <i class="fa-solid fa-chevron-down arrow"></i>
+                        </a>
+                        <ul class="sub_menu_con chinh">
+                            <li class="border_bottom"><a href="danhsachSP.html?category=giay-yonex"><h4>GIÀY CẦU LÔNG YONEX</h4></a></li>
+                            <li class="border_bottom"> <a href="danhsachSP.html?category=giay-lining"><h4>GIÀY CẦU LÔNG LINING</h4></a></li>
+                            <li class="border_bottom"><a href="danhsachSP.html?category=giay-victor"><h4>GIÀY CẦU LÔNG VICTOR</h4></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_sanpham_con">
+                        <a href="danhsachSP.html?=category=balo">
+                            <h4>BALO CẦU LÔNG</h4>
+                            <i class="fa-solid fa-chevron-down arrow"></i>
+                        </a> 
+                        <ul class="sub_menu_con chinh1">
+                            <li class="border_bottom"><a href="danhsachSP.html?category=balo-yonex"><h4>BALO CẦU LÔNG YONEX</h4></a></li>
+                            <li class="border_bottom"> <a href="danhsachSP.html?category=balo-lining"><h4>BALO CẦU LÔNG LINING</h4></a></li>
+                            <li class="border_bottom"><a href="danhsachSP.html?category=balo-victor"><h4>BALO CẦU LÔNG VICTOR</h4></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_sanpham_con"><a href="danhsachSP.html?category=phukien">
+                            <h4>PHỤ KIỆN CẦU LÔNG</h4>
+                            <i class="fa-solid fa-chevron-down arrow"></i>
+                        </a>
+                        <ul class="sub_menu_con chinh2">
+                            <li class="border_bottom"><a href="#"><h4>VỚ CẦU LÔNG</h4></a></li>
+                            <li class="border_bottom"><a href="#"><h4>ỐNG QUẢ CẦU LÔNG</h4></a></li>
+                            <li class="border_bottom"><a href="#"><h4>LƯỚI CẦU LÔNG</h4></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="Lab_thuc_hanh.html">Lab thực hành</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="lienhe.html">Liên hệ </a></li>
+        </ul>
+    </div>
+    <div class="banner">
+        <div class="slider" id="slider">
+            <img src="images/banner.png" alt="banner1"> 
+            <img src="images/banner1.png" alt="banner2"> 
+            <img src="images/banner2.png" alt="banner3"> 
+        </div>
+        <button class="btn next" onclick="nextslide()">&#10095</button>
+        <button class="btn prev" onclick="prevslide()">&#10094</button>
+    </div>
+
+    <div id="dich_vu">
+        <div class="noi_dung">
+            <ul class="row">
+                <li>
+                    <div class="icon"><img src="images/van_chuyen.svg" alt="van_chuyen"></div>
+                    <div class="info">
+                        <span>vận chuyển <strong>TOÀN QUỐC</strong><br>
+                            Thanh toán khi nhận hàng
+                         </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon"><img src="images/chat_luong.svg" alt="chat_luong"></div>
+                    <div class="info">
+                        <span><strong>Bảo đảm chất lượng</strong><br>
+                            Sản phẩm bảo đảm chất lượng
+                         </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon"><img src="images/thanh_toan.svg" alt="thanh_toan"></div>
+                    <div class="info">
+                        <span>Tiến hành<strong>THANH TOÁN </strong><br>
+                            Với nhiều <strong>PHƯƠNG THỨC</strong>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon"><img src="images/doi_san_pham.svg" alt="doi_san_pham"></div>
+                    <div class="info">
+                        <span><strong>Đổi sản phẩm mới</strong><br>
+                            Nếu sản phẩm lỗi
+                         </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="danh_muc_san_pham">
+        <div class="noi_dung_danh_muc">
+            <div class="tittle">
+                <span>Danh mục sản phẩm</span>
+            </div>
+            <div class="danh_muc">
+                <div class="san_pham" onclick="nhay('vot')">
+                   <div  class="hcate" >
+                        <span>
+                            <img src="images/vot_cau_long.png" alt="">
+                        </span>
+                        <span class="t-link">Vợt cầu lông</span>
+                    </div>
+                </div>
+                <div class="san_pham">
+                   <div class="hcate" onclick="nhay('giay')">
+                        <span>
+                            <img src="images/giay.png" alt="">
+                        </span>
+                        <span class="t-link">Giày cầu lông</span>
+                    </div>
+                </div>
+                      <div class="san_pham">
+                   <div class="hcate" onclick="nhay('balo')">
+                        <span>
+                            <img src="images/BALO.png" alt="">
+                        </span>
+                        <span class="t-link">Balo cầu lông</span>
+                    </div>
+                </div>
+                      <div class="san_pham">
+                   <div class="hcate" onclick="nhay('phukien')">
+                        <span>
+                            <img src="images/phu_kien.png" alt="">
+                        </span>
+                        <span class="t-link">Phụ kiện cầu lông</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- san pham vot -->
+     <div id="vot"></div>
+    <div class="sanpham_vot" >
+        <div class="noidung_vot">
+            <div class="header_vot">
+                <h2 class="tieu_de" >Vợt cầu lông </h2>
+                <div class="btn_">
+                    <a href="danhsachSP.html?category=vot" class="btn-inner">
+                        <span class="text" >Xem tất cả</span>
+                    </a>
+                </div>
+            </div>
+            <div class="content_vot">
+                    <div class="content_vot_list">
+                        <div class="prd-card">
+                            <div class="inner"> 
+                                <a href="#" class="prd-card-img">
+                                <img src="images/vot-cau-long-lining-axforce-90-new-loh-kean-yew-2024-chinh-hang_1745521125.jpg" alt="ax90">
+                                </a>
+                                <div class="btn_xemchitiet">
+                                    <a href="chitietSP.html?id=SPV0001" class="xemchitiet">Xem chi tiết</a>
+                                </div>
+                            </div>
+                            <div class="prd-card-ctn">
+                                <a href="#" class="prd-card-link">Vợt cầu lông Lining Axforce 90 New - Loh Kean Yew 2025</a>
+                                <div class="prd-card-gia">
+                                    <div class="prd-card-gia-box">
+                                        <span class="prd-card-gia-new">5.100.000₫</span> 
+                                        <span class="prd-card-gia-goc">6.120.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prd-card">
+                            <div class="inner"> 
+                                <a href="#" class="prd-card-img">
+                                <img src="images/vot-cau-long-victor-drivex-12-wt25-chinh-hang_1767120695.webp" alt="drivex12">
+                                </a>
+                                <div class="btn_xemchitiet">
+                                    <a href="chitietSP.html?id=SPV0014" class="xemchitiet">Xem chi tiết</a>
+                                </div>
+                            </div>
+                            <div class="prd-card-ctn">
+                                <a href="#" class="prd-card-link">Vợt cầu lông Victor DriveX 12 WT25 chính hãng</a>
+                                <div class="prd-card-gia">
+                                    <div class="prd-card-gia-box">
+                                        <span class="prd-card-gia-new">4.449.000₫</span> 
+                                        <span class="prd-card-gia-goc">5.33.800₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prd-card">
+                            <div class="inner"> 
+                                <a href="#" class="prd-card-img">
+                                <img src="images/vot-cau-long-yonex-astrox-99-pro-black-green-chinh-hang_1756251974.webp" alt="astrox99">
+                                </a>
+                                <div class="btn_xemchitiet">
+                                    <a href="chitietSP.html?id=SPV0004" class="xemchitiet">Xem chi tiết</a>
+                                </div>
+                            </div>
+                            <div class="prd-card-ctn">
+                                <a href="#" class="prd-card-link">Vợt cầu lông Yonex Astrox 99 Pro 2025</a>
+                                <div class="prd-card-gia">
+                                    <div class="prd-card-gia-box">
+                                        <span class="prd-card-gia-new">5.209.000₫</span> 
+                                        <span class="prd-card-gia-goc">6.250.800₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prd-card">
+                            <div class="inner"> 
+                                <a href="#" class="prd-card-img">
+                                <img src="images/vot-cau-long-lining-axforce-100-gen-2-chinh-hang_1766950089.webp" alt="ax100">
+                                </a>
+                                <div class="btn_xemchitiet">
+                                    <a href="chitietSP.html?id=SPV0002" class="xemchitiet">Xem chi tiết</a>
+                                </div>
+                            </div>
+                            <div class="prd-card-ctn">
+                                <a href="#" class="prd-card-link">Vợt cầu lông Lining Axforce 100 Gen 2 chính hãng</a>
+                                <div class="prd-card-gia">
+                                    <div class="prd-card-gia-box">
+                                        <span class="prd-card-gia-new">5.650.000₫</span> 
+                                        <span class="prd-card-gia-goc">6.780.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- san pham giay -->
+     <div id="giay"></div>
+    <div class="sanpham_vot" >
+        <div class="noidung_vot">
+            <div class="header_vot">
+                <h2 class="tieu_de">Giày cầu lông</h2>
+                <div class="btn_">
+                    <a href="danhsachSP.html?category=giay" class="btn-inner">
+                        <span class="text">Xem tất cả</span>
+                    </a>
+                </div>
+            </div>
+            <div class="content_vot">
+                    <div class="content_vot_list">
+                        <div class="prd-card">
+                            <div class="inner"> 
+                                <a href="#" class="prd-card-img">
+                                <img src="images/giay-cau-long-lining-ayav001-5-chinh-hang_1770842855.webp" alt="">
+                                </a>
+                                <div class="btn_xemchitiet">
+                                    <a href="#" class="xemchitiet">Xem chi tiết</a>
+                                </div>
+                            </div>
+                            <div class="prd-card-ctn">
+                                <a href="#" class="prd-card-link">Giày cầu lông Lining AYAV001-5 Saga 3 Pro Chính Hãng</a>
+                                <div class="prd-card-gia">
+                                    <div class="prd-card-gia-box">
+                                        <span class="prd-card-gia-new">3.780.000₫</span> 
+                                        <span class="prd-card-gia-goc">4.536.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prd-card">
+                            <div class="inner"> 
+                                <a href="#" class="prd-card-img">
+                                <img src="images/giay-cau-long-yonex-88-dial-3-2025-light-begie-chinh-hang_1754100762.webp" alt="">
+                                </a>
+                                <div class="btn_xemchitiet">
+                                    <a href="#" class="xemchitiet">Xem chi tiết</a>
+                                </div>
+                            </div>
+                            <div class="prd-card-ctn">
+                                <a href="#" class="prd-card-link">Giày cầu lông Yonex 88 Dial 3 Wide 2025</a>
+                                <div class="prd-card-gia">
+                                    <div class="prd-card-gia-box">
+                                        <span class="prd-card-gia-new">3.059.000₫</span> 
+                                        <span class="prd-card-gia-goc">33.678.800₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prd-card">
+                            <div class="inner"> 
+                                <a href="#" class="prd-card-img">
+                                <img src="images/giay-cau-long-lining-ayav001-6-flight-pro-chinh-hang_1768329599.webp" alt="">
+                                </a>
+                                <div class="btn_xemchitiet">
+                                    <a href="#" class="xemchitiet">Xem chi tiết</a>
+                                </div>
+                            </div>
+                            <div class="prd-card-ctn">
+                                <a href="#" class="prd-card-link">Giày cầu lông Lining AYAV001-6 Flight Ⅲ Pro chính hãng</a>
+                                <div class="prd-card-gia">
+                                    <div class="prd-card-gia-box">
+                                        <span class="prd-card-gia-new">3.339.000₫</span> 
+                                        <span class="prd-card-gia-goc">4.078.800₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prd-card">
+                            <div class="inner"> 
+                                <a href="#" class="prd-card-img">
+                                <img src="images/giay-cau-long-victor-p9200ii-tty-trang-noi-dia-2.webp" alt="">
+                                </a>
+                                <div class="btn_xemchitiet">
+                                    <a href="#" class="xemchitiet">Xem chi tiết</a>
+                                </div>
+                            </div>
+                            <div class="prd-card-ctn">
+                                <a href="#" class="prd-card-link">Giày Cầu Lông Victor P9200II TTY</a>
+                                <div class="prd-card-gia">
+                                    <div class="prd-card-gia-box">
+                                        <span class="prd-card-gia-new">3.550.000₫</span> 
+                                        <span class="prd-card-gia-goc">4.260.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- san pham balo -->
+     <div id="balo"></div>
+    <div class="sanpham_vot" >
+        <div class="noidung_vot">
+            <div class="header_vot">
+                <h2 class="tieu_de">Balo cầu lông</h2>
+                <div class="btn_">
+                    <a href="danhsachSP.html?category=balo" class="btn-inner">
+                        <span class="text">Xem tất cả</span>
+                    </a>
+                </div>
+            </div>
+            <div class="content_vot">
+                    <div class="content_vot_list">
+                        <div class="prd-card">
+                            <div class="inner"> 
+                                <a href="#" class="prd-card-img">
+                                <img src="images/BALO/balo-cau-long-lining-p-absv131-3_1756931811.webp" alt="">
+                                </a>
+                                <div class="btn_xemchitiet">
+                                    <a href="#" class="xemchitiet">Xem chi tiết</a>
+                                </div>
+                            </div>
+                            <div class="prd-card-ctn">
+                                <a href="#" class="prd-card-link">Balo cầu lông Lining P-ABSV131-3 chính hãng</a>
+                                <div class="prd-card-gia">
+                                    <div class="prd-card-gia-box">
+                                        <span class="prd-card-gia-new">1.100.000₫</span> 
+                                        <span class="prd-card-gia-goc">1.320.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prd-card">
+                            <div class="inner"> 
+                                <a href="#" class="prd-card-img">
+                                <img src="images/BALO/balo-cau-long-yonex-ba92421bex-dark-green-chinh-hang_1759198346.webp" alt="">
+                                </a>
+                                <div class="btn_xemchitiet">
+                                    <a href="#" class="xemchitiet">Xem chi tiết</a>
+                                </div>
+                            </div>
+                            <div class="prd-card-ctn">
+                                <a href="#" class="prd-card-link">Balo cầu lông Yonex BA92412BEX - Dark Green chính hãng</a>
+                                <div class="prd-card-gia">
+                                    <div class="prd-card-gia-box">
+                                        <span class="prd-card-gia-new">2.259.000₫</span> 
+                                        <span class="prd-card-gia-goc">2.710.800₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prd-card">
+                            <div class="inner"> 
+                                <a href="#" class="prd-card-img">
+                                <img src="images/BALO/balo-cau-long-yonex-bag52512ex-pink_1745202939.webp" alt="">
+                                </a>
+                                <div class="btn_xemchitiet">
+                                    <a href="#" class="xemchitiet">Xem chi tiết</a>
+                                </div>
+                            </div>
+                            <div class="prd-card-ctn">
+                                <a href="#" class="prd-card-link">Balo cầu lông Yonex BAG52512EX</a>
+                                <div class="prd-card-gia">
+                                    <div class="prd-card-gia-box">
+                                        <span class="prd-card-gia-new">1.419.000₫</span> 
+                                        <span class="prd-card-gia-goc">1.702.800₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prd-card">
+                            <div class="inner"> 
+                                <a href="#" class="prd-card-img">
+                                <img src="images/BALO/balo-cau-long-victor-br5050-wt-25-chinh-hang_1765848464.webp" alt="">
+                                </a>
+                                <div class="btn_xemchitiet">
+                                    <a href="#" class="xemchitiet">Xem chi tiết</a>
+                                </div>
+                            </div>
+                            <div class="prd-card-ctn">
+                                <a href="#" class="prd-card-link">Balo cầu lông Victor BR5050 WT 25 chính hãng</a>
+                                <div class="prd-card-gia">
+                                    <div class="prd-card-gia-box">
+                                        <span class="prd-card-gia-new">1.240.000₫</span> 
+                                        <span class="prd-card-gia-goc">1.488.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- san pham phu kien -->
+    <div id="phukien"></div>
+    <div class="sanpham_vot" >
+        <div class="noidung_vot">
+            <div class="header_vot">
+                <h2 class="tieu_de">Phụ kiện cầu lông</h2>
+                <div class="btn_">
+                    <a href="danhsachSP.html?category=phukien" class="btn-inner">
+                        <span class="text">Xem tất cả</span>
+                    </a>
+                </div>
+            </div>
+            <div class="content_vot">
+                    <div class="content_vot_list">
+                        <div class="prd-card">
+                            <div class="inner"> 
+                                <a href="#" class="prd-card-img">
+                                <img src="images/PHU_KIEN/quan-can-vot-cau-long-kumpoo-k30-1_1778536548.webp" alt="">
+                                </a>
+                                <div class="btn_xemchitiet">
+                                    <a href="#" class="xemchitiet">Xem chi tiết</a>
+                                </div>
+                            </div>
+                            <div class="prd-card-ctn">
+                                <a href="#" class="prd-card-link">Quấn cán vợt cầu lông Kumpoo K30</a>
+                                <div class="prd-card-gia">
+                                    <div class="prd-card-gia-box">
+                                        <span class="prd-card-gia-new">40.000₫</span> 
+                                        <span class="prd-card-gia-goc">48.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prd-card">
+                            <div class="inner"> 
+                                <a href="#" class="prd-card-img">
+                                <img src="images/PHU_KIEN/ong-cau-long-nhua-victor-ncs-chinh-hang-12-qua_1751075550.webp" alt="">
+                                </a>
+                                <div class="btn_xemchitiet">
+                                    <a href="#" class="xemchitiet">Xem chi tiết</a>
+                                </div>
+                            </div>
+                            <div class="prd-card-ctn">
+                                <a href="#" class="prd-card-link">Ống Cầu Lông Nhựa Victor NCS chính hãng (12 quả)</a>
+                                <div class="prd-card-gia">
+                                    <div class="prd-card-gia-box">
+                                        <span class="prd-card-gia-new">360.000₫</span> 
+                                        <span class="prd-card-gia-goc">432.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prd-card">
+                            <div class="inner"> 
+                                <a href="#" class="prd-card-img">
+                                <img src="images/PHU_KIEN/vo-cau-long-yonex-sssf060140-black-chinh-hang_1778638472.webp" alt="">
+                                </a>
+                                <div class="btn_xemchitiet">
+                                    <a href="#" class="xemchitiet">Xem chi tiết</a>
+                                </div>
+                            </div>
+                            <div class="prd-card-ctn">
+                                <a href="#" class="prd-card-link">Vớ cầu lông Yonex SSSF060140 - Black chính hãng</a>
+                                <div class="prd-card-gia">
+                                    <div class="prd-card-gia-box">
+                                        <span class="prd-card-gia-new">40.000₫</span> 
+                                        <span class="prd-card-gia-goc">48.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prd-card">
+                            <div class="inner"> 
+                                <a href="#" class="prd-card-img">
+                                <img src="images/PHU_KIEN/day-cuoc-cang-vot-cau-long-vs-vx63-chinh-hang_1775530411.webp" alt="">
+                                </a>
+                                <div class="btn_xemchitiet">
+                                    <a href="#" class="xemchitiet">Xem chi tiết</a>
+                                </div>
+                            </div>
+                            <div class="prd-card-ctn">
+                                <a href="#" class="prd-card-link">Dây cước căng vợt cầu lông VS VX63 Chính Hãng</a>
+                                <div class="prd-card-gia">
+                                    <div class="prd-card-gia-box">
+                                        <span class="prd-card-gia-new">175.000₫</span> 
+                                        <span class="prd-card-gia-goc">210.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="footer-logo">
+            <img src="images/logo.png" alt="logo">
+            <span>Nơi nâng tầm đam mê của bạn.</span>
+            <span>Uy tín - chất lượng - sang trọng</span>
+            <div>
+                <i class="fa-brands fa-facebook"> </i>
+                <i class="fa-brands fa-instagram"> </i>
+                <i class="fa-brands fa-tiktok"> </i>
+                <i class="fa-brands fa-youtube"> </i>
+            </div>
+        </div>
+        <div class="footer-thongtin">
+                <h2>Thông tin liên hệ</h2>
+                <div>
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <span>Địa chỉ: Phường Đồng xoài, TP.Đồng Nai </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Điện thoại: 0123 456 789</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email: info@caulong.com</span>
+                </div>
+        </div>
+        <div class="footer-img-map">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d977.3042299065058!2d106.86605626959144!3d11.536291313303742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDMyJzEwLjYiTiAxMDbCsDUyJzAwLjEiRQ!5e0!3m2!1svi!2s!4v1779016938579!5m2!1svi!2s" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </footer>
+    
+    <script src="js/cart-badge.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/load.js"></script>
+    <script src="js/nhay.js"></script>
+    <script type="module" src="js/danhsachSP.js"></script>
+</body>
+</html>
